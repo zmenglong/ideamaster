@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_toolbar_layout"/>
+    <gg.attitude.views.MyScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:paddingRight="8dp"
+                android:orientation="vertical"
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:hint="请输入手机号码"
+                    android:inputType="number"
+                    android:textSize="@dimen/txt_size_normal"
+                    app:met_iconLeft="@drawable/phone"
+                    app:met_maxCharacters="11"
+                    app:met_errorColor="@color/error_dark"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="您的手机号码："
+                    app:met_floatingLabelAnimating="true"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_primaryColor="@color/colorPrimary">
+                    <requestFocus/>
+                </com.rengwuxian.materialedittext.MaterialEditText>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入您的密码"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/txt_size_normal"
+                    app:met_iconLeft="@drawable/password"
+                    app:met_errorColor="@color/error_dark"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="我不看: )"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_primaryColor="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="@dimen/margin_normal">
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        fancy:fb_text="@string/Login"
+                        fancy:fb_textColor="@color/white"
+                        fancy:fb_defaultColor="@color/colorPrimary"
+                        fancy:fb_focusColor="@color/colorPrimaryDark"
+                        fancy:fb_radius="@dimen/radius_small"
+                        ></mehdi.sakout.fancybuttons.FancyButton>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="120dp"
+                android:gravity="center_horizontal|top"
+                >
+
+                <LinearLayout
+                    android:id="@+id/forgetLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_in_drawer_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="忘记密码？"
+                        android:textSize="@dimen/txt_size_small"
+                        android:textColor="@color/errorView_color_light"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/textColor_grey_light"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/include_others_login_layout"/>
+        </LinearLayout>
+
+    </gg.attitude.views.MyScrollView>
+</LinearLayout>

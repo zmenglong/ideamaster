@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b7ee</color>
+    <color name="colorPrimaryDark">#0292d2</color>
+    <color name="colorAccent">#f45c6d</color>
+
+    <color name="color_chart_a">#fff45c</color>
+    <color name="color_chart_a_dark">#fff100</color>
+    <color name="color_chart_b">#00b7ee</color>
+    <color name="color_chart_b_dark">#0292d2</color>
+
+    <color name="color_point_feedback_card">#00b7ee</color>
+
+    <color name="color_logout">#f45c6d</color>
+    <color name="color_logout_dark">#feb1b6</color>
+
+    <color name="error">#feb1b6</color>
+    <color name="error_dark">#f45c6d</color>
+
+    <color name="textColor_grey_light">#777777</color>
+    <color name="textColor_gray_5">#555555</color>
+    <color name="textColor_black_light">#444444</color>
+    <color name="errorView_color_light">#999999</color>
+
+
+    <color name="color_btn_register">#ffffff</color>
+    <color name="color_btn_register_press">#E5ffffff</color>
+    <color name="color_btn_login">#00b7ee</color>
+    <color name="color_btn_login_press">#E500b7ee</color>
+
+    <color name="white">#ffffff</color>
+    <color name="grey_menu_selected">#aaaaaa</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="color_other_login">#00b7ee</color>
+
+</resources>

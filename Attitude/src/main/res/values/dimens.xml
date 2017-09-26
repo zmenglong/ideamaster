@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="padding_normal">12dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+
+    <dimen name="margin_in_toolbar">8dp</dimen>
+    <dimen name="margin_in_drawer">16dp</dimen>
+    <dimen name="margin_in_drawer_small">12dp</dimen>
+    <dimen name="margin_iv2tv">16dp</dimen>
+    <dimen name="margin_iv2tv_small">5dp</dimen>
+    <dimen name="padding_in_drawer">16dp</dimen>
+
+    <dimen name="iv_small_size_drawer">24dp</dimen>
+    <dimen name="iv_large_size_drawer">64dp</dimen>
+
+    <dimen name="iv_normal_size">32dp</dimen>
+    <dimen name="iv_large_size">72dp</dimen>
+    <dimen name="avatar_small_size">56dp</dimen>
+    <dimen name="avatar_normal_size">64dp</dimen>
+    <dimen name="avatar_large_size">72dp</dimen>
+
+    <dimen name="radius_normal">16dp</dimen>
+    <dimen name="radius_small">0dp</dimen>
+
+    <dimen name="minWidth_Layout">56dp</dimen>
+    <dimen name="minheight_Layout">56dp</dimen>
+    <dimen name="min_height_editText">44dp</dimen>
+
+    <dimen name="txt_size_small">12sp</dimen>
+    <dimen name="txt_size_edit">14sp</dimen>
+    <dimen name="txt_size_normal">16sp</dimen>
+    <dimen name="txt_size_mid">22sp</dimen>
+    <dimen name="txt_size_large">24sp</dimen>
+
+    <dimen name="card_tv_height">180dp</dimen>
+
+</resources>

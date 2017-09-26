@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_layout"/>
+
+    <gg.attitude.views.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password_ex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:hint="请输入原登录密码"
+                android:inputType="textPassword"
+                android:textSize="@dimen/txt_size_normal"
+                app:met_errorColor="@color/error_dark"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="原登录密码"
+                app:met_floatingLabelAnimating="true"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary">
+                <requestFocus/>
+            </com.rengwuxian.materialedittext.MaterialEditText>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新的登录密码"
+                android:inputType="textPassword"
+                android:textSize="@dimen/txt_size_normal"
+                app:met_errorColor="@color/error_dark"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="我不看: )"
+                app:met_floatingLabelAnimating="true"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新的登录密码"
+                android:inputType="textPassword"
+                android:textSize="@dimen/txt_size_normal"
+                app:met_errorColor="@color/error_dark"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="要和上面一样哦"
+                app:met_floatingLabelAnimating="true"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/margin_normal">
+                <mehdi.sakout.fancybuttons.FancyButton
+                    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/btn_changePSW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    fancy:fb_text="@string/Change_psw"
+                    fancy:fb_textColor="@color/white"
+                    fancy:fb_defaultColor="@color/colorPrimary"
+                    fancy:fb_focusColor="@color/colorPrimaryDark"
+                    fancy:fb_radius="@dimen/radius_small"
+                    ></mehdi.sakout.fancybuttons.FancyButton>
+            </LinearLayout>
+
+        </LinearLayout>
+    </gg.attitude.views.MyScrollView>
+</LinearLayout>

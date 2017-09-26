@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gg.attitude.views.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:paddingRight="8dp"
+            android:orientation="vertical"
+            >
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:hint="请输入注册手机号"
+                android:inputType="number"
+                app:met_iconLeft="@drawable/phone"
+                app:met_maxCharacters="11"
+                app:met_errorColor="@color/error_dark"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="您注册使用的手机号："
+                app:met_floatingLabelAnimating="true"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary">
+                <requestFocus/>
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/margin_normal">
+                <mehdi.sakout.fancybuttons.FancyButton
+                    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/btn_getCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    fancy:fb_text="@string/getCode"
+                    fancy:fb_textColor="@color/white"
+                    fancy:fb_defaultColor="@color/colorPrimary"
+                    fancy:fb_focusColor="@color/colorPrimaryDark"
+                    fancy:fb_radius="@dimen/radius_small"
+                    ></mehdi.sakout.fancybuttons.FancyButton>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+        <include layout="@layout/include_others_login_layout"/>
+    </LinearLayout>
+
+</gg.attitude.views.MyScrollView>

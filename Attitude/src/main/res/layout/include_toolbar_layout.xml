@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.AppBarOverlay"
+            app:title=" "
+            >
+
+
+            <TextView
+                android:id="@+id/tv_tb_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="态  度"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical">
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/chooseHas_Not"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/margin_in_toolbar"
+                    android:minWidth="36dp"
+                    android:minHeight="36dp"
+                    app:kswAnimationDuration="600"
+                    app:kswBackColor="@color/white"
+                    app:kswFadeBack="true"
+                    app:kswTextOn="已反馈"
+                    app:kswTextOff="未反馈"
+                    app:kswBackRadius="1dp"
+                    app:kswThumbRadius="1dp"
+                    android:textColor="@color/colorPrimary"
+                    app:buttonTint="@color/colorPrimary"
+                    app:kswThumbColor="@color/colorPrimary"/>
+                <ImageView
+                    android:id="@+id/iv_feedback"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/feedback"
+                    android:layout_margin="@dimen/margin_in_toolbar"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/rightIV"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/tick"
+                    android:layout_margin="@dimen/margin_in_toolbar"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

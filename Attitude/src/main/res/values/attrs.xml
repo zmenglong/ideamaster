@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--首页卡片-->
+    <declare-styleable name="card">
+        <attr name="bottomMarginTop" format="dimension" />
+        <attr name="yOffsetStep" format="dimension" />
+    </declare-styleable>
+
+    <!--扇形图-->
+    <declare-styleable name="PieGraph">
+        <attr name="pieInnerCircleRatio" format="integer"/>
+        <attr name="pieSlicePadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+</resources>

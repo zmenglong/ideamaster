@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/contentRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/mProgressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:indeterminate="false"
+            android:secondaryProgress="10000"
+            android:max="10000"
+            android:progress="0"
+            android:layout_alignParentBottom="true"
+            />
+
+        <gg.attitude.views.card.CardSlidePanel
+            android:id="@+id/image_slide_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card:bottomMarginTop="40dp"
+            card:yOffsetStep="22dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/card_bottom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/card_left_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/a_button" />
+
+                <Button
+                    android:id="@+id/care"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/care_button" />
+
+                <Button
+                    android:id="@+id/card_right_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/b_button" />
+            </LinearLayout>
+
+            <gg.attitude.views.card.CardItemView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_small"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <gg.attitude.views.card.CardItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:layout_gravity="center_horizontal" />
+
+            <gg.attitude.views.card.CardItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:layout_gravity="center_horizontal" />
+
+            <gg.attitude.views.card.CardItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:layout_gravity="center_horizontal" />
+
+
+        </gg.attitude.views.card.CardSlidePanel>
+    </RelativeLayout>
+
+    <include layout="@layout/include_loading_error"/>
+
+
+</LinearLayout>

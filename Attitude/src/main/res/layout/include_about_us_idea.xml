@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idea"
+        android:textSize="@dimen/txt_size_mid"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margin_normal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_size_small"
+        android:textIsSelectable="false"
+        android:lineSpacingMultiplier="1.2"
+        android:text="想法来源风暴\n出门穿什么衣服？\n晚饭吃什么？\n看哪部电影？\n选择困难时问谁？\n于是乎 ，我们就想到做这样一个APP——态度"/>
+</LinearLayout>

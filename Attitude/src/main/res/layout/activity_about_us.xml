@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_layout"/>
+    <gg.attitude.views.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/iv_large_size"
+                    android:layout_height="@dimen/iv_large_size"
+                    android:background="@color/transparent"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_margin="@dimen/margin_iv2tv_small"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+            <include layout="@layout/include_about_us_idea"/>
+            <include layout="@layout/include_about_us_team_members"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:minHeight="@dimen/minheight_Layout"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="英航学社 版权所有"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textColor="@color/textColor_grey_light"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textColor="@color/textColor_grey_light"
+                    android:text="Copyright © 2016 INCLUB.All Rights Reserved."/>
+            </LinearLayout>
+        </LinearLayout>
+    </gg.attitude.views.MyScrollView>
+</LinearLayout>
